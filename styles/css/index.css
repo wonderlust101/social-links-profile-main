@@ -24,61 +24,65 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 24px;
-  max-width: 384px;
+  gap: 1.5rem;
+  max-width: 24rem;
   width: 100%;
-  padding: 40px;
+  padding: 2.5rem;
   background-color: rgb(31, 31, 31);
-  border-radius: 12px;
+  border-radius: 0.75rem;
 }
 
 h1 {
-  font-size: 24px;
-  line-height: 150%;
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
 
 p {
-  font-size: 14px;
-  line-height: 150%;
+  font-size: 0.875rem;
+  line-height: 1.5;
 }
 
 .profile-image img {
-  width: 88px;
-  border-radius: 999px;
+  width: 5.5rem;
+  border-radius: 50%;
 }
 
 .user-details {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  gap: 0.25rem;
 }
 
 .user-details .location {
   color: rgb(196, 248, 42);
 }
 
+.user-quote p {
+  text-align: center;
+}
+
 .links-list {
-  width: inherit;
+  width: 100%;
 }
 
 .links-list ul {
+  width: 100%;
   list-style: none;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .links-list button {
   width: 100%;
-  padding: 12px;
-  font-size: 14px;
+  padding: 0.75rem;
+  font-size: 0.875rem;
   line-height: 150%;
   color: rgb(255, 255, 255);
   background-color: rgb(51, 51, 51);
   border: none;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   transition: all 0.15s;
 }
 
@@ -93,12 +97,12 @@ p {
 
 @media screen and (max-width: 768px) {
   main {
-    max-width: 456px;
+    max-width: 28.5rem;
   }
 }
 @media screen and (max-width: 475px) {
   main {
-    max-width: 279px;
+    max-width: 17.5rem;
   }
 }
 
