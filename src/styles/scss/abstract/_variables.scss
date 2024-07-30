@@ -1,0 +1,63 @@
+@use 'mixins' as m;
+
+// Colors
+$colors: (
+        'grey': (
+                900: #141414,
+                800: #1f1f1f,
+                700: #333333,
+        ),
+        'green': (
+                500: #c4f82a,
+        ),
+        'white': (
+                500: #ffffff,
+        )
+);
+
+//Breakpoints
+$breakpoints: (
+        'small': 28.125rem,
+);
+
+@mixin breakpoint($size) {
+  @media (max-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+// Typography
+$font-size: (
+        500: 0.875rem,
+        700: 1.5625rem,
+);
+
+$line-height: (
+        'm': 1.5,
+);
+
+// Dimensions
+$spacing: (
+        500:2.5rem,
+        300:1.5rem,
+        200:1rem,
+        150:0.75rem,
+        100:0.5rem,
+        50:0.25rem,
+);
+
+$border-radius: (
+        small: 0.5rem,
+        medium: 0.75rem,
+        circle: 10rem,
+);
+
+// Root
+:root {
+  @include m.map-to-root(clr, $colors);
+  @include m.map-to-root(br, $breakpoints);
+  @include m.map-to-root(fs, $font-size);
+  @include m.map-to-root(lh, $line-height);
+  @include m.map-to-root(sp, $spacing);
+  @include m.map-to-root(br, $border-radius);
+}
